@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gerador de Plano de Leitura Bíblica</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="logo">📖 Bíblia Planos</div>
+</header>
+
+<div class="container">
+  <main>
+    <h1>Plano de Leitura Bíblica</h1>
+    <p class="subtitle">Escolha um livro para ver o plano de leitura semanal de 6 dias ou veja todos os planos.</p>
+    <label for="input-livro">Nome do livro:</label>
+    <input type="text" id="input-livro" autocomplete="off" placeholder="Ex: Gênesis, Mateus, João..." />
+    <div style="color:#9ca3af; font-size: 0.875rem; margin-top: 0.25rem;">Digite o nome do livro, "todos" para todos os planos ou deixe vazio.</div>
+    <div class="buttons">
+      <button class="primary" id="btn-gerar">Gerar Plano</button>
+      <button class="secondary" id="btn-todos">Mostrar Todos os Planos</button>
+      <button class="secondary" id="btn-limpar">Limpar</button>
+    </div>
+    <section id="output" tabindex="0"></section>
+  </main>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
